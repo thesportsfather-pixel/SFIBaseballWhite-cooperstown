@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Thank You | SFI White 12U
+  </title>
+
+  <meta
+    name="description"
+    content="Thank you for supporting South Florida Industrials White 12U on their Road to Cooperstown."
+  />
+
+  <style>
+    :root {
+      --black: #05070d;
+      --navy: #091426;
+      --blue: #147dff;
+      --blue2: #39a7ff;
+      --white: #ffffff;
+      --muted: #b9cadc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(20,125,255,.22),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          #03060b,
+          #091426
+        );
+
+      color: white;
+    }
+
+    .card {
+      width: min(620px, 100%);
+
+      padding: 34px 28px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.10);
+
+      border-radius: 26px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(8,18,34,.98),
+          rgba(4,8,15,.98)
+        );
+
+      box-shadow:
+        0 24px 65px
+        rgba(0,0,0,.38);
+
+      text-align: center;
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+
+      margin: 0 auto 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 10px;
+
+      border-radius: 22px;
+
+      background:
+        rgba(255,255,255,.06);
+
+      border:
+        1px solid
+        rgba(255,255,255,.08);
+    }
+
+    .logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .checkmark {
+      width: 72px;
+      height: 72px;
+
+      margin: 0 auto 18px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background:
+        linear-gradient(
+          135deg,
+          #147dff,
+          #39a7ff
+        );
+
+      color: white;
+
+      font-size: 38px;
+      font-weight: 900;
+
+      box-shadow:
+        0 0 24px
+        rgba(20,125,255,.35);
+    }
+
+    .eyebrow {
+      margin-bottom: 8px;
+
+      color: var(--blue2);
+
+      font-size: 12px;
+      font-weight: 900;
+
+      letter-spacing: 1.5px;
+
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size:
+        clamp(
+          36px,
+          7vw,
+          58px
+        );
+
+      line-height: 1;
+
+      letter-spacing: -1.5px;
+    }
+
+    p {
+      max-width: 500px;
+
+      margin: 16px auto 0;
+
+      color: var(--muted);
+
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .actions {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 12px;
+
+      margin-top: 26px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 50px;
+
+      padding: 13px 18px;
+
+      border-radius: 12px;
+
+      text-decoration: none;
+
+      font-weight: 900;
+    }
+
+    .button.primary {
+      color: white;
+
+      background:
+        linear-gradient(
+          90deg,
+          #147dff,
+          #39a7ff
+        );
+    }
+
+    .button.secondary {
+      color: white;
+
+      border:
+        1px solid
+        rgba(255,255,255,.16);
+
+      background:
+        rgba(255,255,255,.07);
+    }
+
+    .session {
+      margin-top: 18px;
+
+      color: #7790a8;
+
+      font-size: 11px;
+
+      word-break: break-word;
+    }
+
+    @media (max-width: 520px) {
+      .card {
+        padding: 28px 18px;
+      }
+
+      .logo {
+        width: 110px;
+        height: 110px;
+      }
+
+      .actions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="card">
+
+    <div class="logo">
+      <img
+        src="/logo.png"
+        alt="South Florida Industrials Baseball"
+      />
+    </div>
+
+    <div class="checkmark">
+      ✓
+    </div>
+
+    <div class="eyebrow">
+      South Florida Industrials White 12U
+    </div>
+
+    <h1>
+      Thank You!
+    </h1>
+
+    <p>
+      Your contribution helps support the
+      South Florida Industrials White 12U
+      Road to Cooperstown.
+      We appreciate your support of the players and team.
+    </p>
+
+    <div class="actions">
+
+      <a
+        id="playerButton"
+        class="button primary"
+        href="/"
+        style="display:none"
+      >
+        Return to Player
+      </a>
+
+      <a
+        class="button secondary"
+        href="/"
+      >
+        Return to Team
+      </a>
+
+    </div>
+
+    <div
+      id="sessionInfo"
+      class="session"
+    ></div>
+
+  </main>
+
+  <script>
+    const params =
+      new URLSearchParams(
+        window.location.search
+      );
+
+    const player =
+      params.get("player");
+
+    const sessionId =
+      params.get("session_id");
+
+    const playerButton =
+      document.getElementById(
+        "playerButton"
+      );
+
+    if (player) {
+      playerButton.href =
+        `/fundraiser.html?player=${encodeURIComponent(
+          player
+        )}`;
+
+      playerButton.style.display =
+        "inline-flex";
+    }
+
+    if (sessionId) {
+      document.getElementById(
+        "sessionInfo"
+      ).textContent =
+        `Payment confirmation: ${sessionId}`;
+    }
+  </script>
+
+</body>
+</html>
