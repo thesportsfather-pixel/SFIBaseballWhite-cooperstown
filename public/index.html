@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    South Florida Industrials White 12U | Road to Cooperstown
+  </title>
+
+  <meta
+    name="description"
+    content="Support South Florida Industrials White 12U on their Road to Cooperstown."
+  />
+
+  <style>
+    :root {
+      --black: #05070d;
+      --navy: #091426;
+      --blue: #147dff;
+      --blue2: #39a7ff;
+      --silver: #d7dce3;
+      --white: #ffffff;
+      --offwhite: #f4f7fb;
+      --text: #0a1730;
+      --muted: #677489;
+      --border: #dce4ee;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      color: var(--text);
+
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(20,125,255,.16),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          #03060b 0,
+          #081425 530px,
+          #f4f7fb 530px
+        );
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .page {
+      width: min(
+        1160px,
+        calc(100% - 24px)
+      );
+
+      margin: 0 auto;
+      padding: 22px 0 60px;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      padding: 34px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.10);
+
+      border-radius: 28px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(4,7,14,.99),
+          rgba(8,27,52,.98)
+        );
+
+      box-shadow:
+        0 22px 60px
+        rgba(0,0,0,.34);
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 430px;
+      height: 430px;
+
+      right: -160px;
+      top: -210px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(20,125,255,.18);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+
+      display: grid;
+
+      grid-template-columns:
+        220px 1fr;
+
+      gap: 30px;
+
+      align-items: center;
+    }
+
+    .logo-box {
+      min-height: 210px;
+
+      padding: 14px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          180deg,
+          #ffffff,
+          #e8edf4
+        );
+
+      box-shadow:
+        0 16px 36px
+        rgba(0,0,0,.28);
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: auto;
+      max-height: 190px;
+
+      object-fit: contain;
+    }
+
+    .eyebrow {
+      margin-bottom: 9px;
+
+      color: var(--blue2);
+
+      font-size: 12px;
+      font-weight: 900;
+
+      letter-spacing: 1.7px;
+
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0;
+
+      max-width: 760px;
+
+      font-size:
+        clamp(
+          38px,
+          7vw,
+          72px
+        );
+
+      line-height: .95;
+
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      display: block;
+
+      margin-top: 8px;
+
+      color: var(--blue2);
+
+      font-size: .62em;
+
+      letter-spacing: -1px;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+
+      margin: 18px 0 0;
+
+      color: #cfdeed;
+
+      font-size: 16px;
+
+      line-height: 1.6;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 9px;
+
+      margin-top: 20px;
+    }
+
+    .badge {
+      padding: 9px 12px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.13);
+
+      border-radius: 999px;
+
+      background:
+        rgba(255,255,255,.08);
+
+      color: white;
+
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .badge.blue {
+      border-color:
+        rgba(57,167,255,.40);
+
+      background:
+        rgba(20,125,255,.18);
+
+      color: #a9dbff;
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro-card {
+      margin-top: 22px;
+
+      padding: 28px;
+
+      border:
+        1px solid #e1e8f0;
+
+      border-radius: 24px;
+
+      background: white;
+
+      box-shadow:
+        0 14px 38px
+        rgba(7,26,54,.09);
+
+      text-align: center;
+    }
+
+    .intro-kicker {
+      color: var(--blue);
+
+      font-size: 12px;
+      font-weight: 900;
+
+      letter-spacing: 1.4px;
+
+      text-transform: uppercase;
+    }
+
+    .intro-card h2 {
+      margin: 6px 0 9px;
+
+      font-size:
+        clamp(
+          29px,
+          5vw,
+          44px
+        );
+
+      letter-spacing: -1px;
+    }
+
+    .intro-card p {
+      max-width: 780px;
+
+      margin: 0 auto;
+
+      color: var(--muted);
+
+      font-size: 15px;
+
+      line-height: 1.6;
+    }
+
+    .fundraiser-summary {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 12px;
+
+      margin-top: 22px;
+    }
+
+    .summary-item {
+      padding: 15px;
+
+      border:
+        1px solid #dde6ef;
+
+      border-radius: 14px;
+
+      background: #f8fafc;
+    }
+
+    .summary-value {
+      color: var(--navy);
+
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    .summary-label {
+      margin-top: 3px;
+
+      color: #728095;
+
+      font-size: 11px;
+      font-weight: 900;
+
+      letter-spacing: .7px;
+
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       PLAYERS
+    ========================= */
+
+    .players-section {
+      margin-top: 22px;
+
+      padding: 28px;
+
+      border:
+        1px solid #e0e7ef;
+
+      border-radius: 24px;
+
+      background: white;
+
+      box-shadow:
+        0 14px 38px
+        rgba(7,26,54,.08);
+    }
+
+    .section-head {
+      margin-bottom: 20px;
+
+      text-align: center;
+    }
+
+    .section-head .small {
+      color: var(--blue);
+
+      font-size: 12px;
+      font-weight: 900;
+
+      letter-spacing: 1.2px;
+
+      text-transform: uppercase;
+    }
+
+    .section-head h2 {
+      margin: 5px 0 7px;
+
+      font-size: 34px;
+
+      letter-spacing: -1px;
+    }
+
+    .section-head p {
+      margin: 0;
+
+      color: var(--muted);
+
+      line-height: 1.5;
+    }
+
+    .players-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          3,
+          minmax(0, 1fr)
+        );
+
+      gap: 14px;
+    }
+
+    .player-card {
+      position: relative;
+      overflow: hidden;
+
+      display: flex;
+      align-items: center;
+
+      gap: 14px;
+
+      min-height: 116px;
+
+      padding: 16px;
+
+      border:
+        1px solid #dbe4ed;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #f7f9fc
+        );
+
+      text-decoration: none;
+
+      color: var(--text);
+
+      box-shadow:
+        0 6px 15px
+        rgba(7,26,54,.06);
+
+      transition:
+        transform .15s ease,
+        box-shadow .15s ease,
+        border-color .15s ease;
+    }
+
+    .player-card::after {
+      content: "";
+
+      position: absolute;
+
+      width: 110px;
+      height: 110px;
+
+      right: -70px;
+      bottom: -70px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(20,125,255,.09);
+    }
+
+    .player-card:hover {
+      transform: translateY(-3px);
+
+      border-color: #79b6ff;
+
+      box-shadow:
+        0 12px 26px
+        rgba(20,125,255,.15);
+    }
+
+    .player-logo {
+      flex: 0 0 72px;
+
+      width: 72px;
+      height: 72px;
+
+      padding: 7px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          180deg,
+          #07111f,
+          #03060b
+        );
+
+      box-shadow:
+        inset 0 0 0 1px
+        rgba(255,255,255,.08);
+    }
+
+    .player-logo img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: contain;
+    }
+
+    .player-info {
+      min-width: 0;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    .player-number {
+      margin-bottom: 4px;
+
+      color: var(--blue);
+
+      font-size: 12px;
+      font-weight: 900;
+
+      letter-spacing: .9px;
+
+      text-transform: uppercase;
+    }
+
+    .player-name {
+      margin: 0;
+
+      color: var(--navy);
+
+      font-size: 20px;
+      font-weight: 900;
+
+      line-height: 1.05;
+    }
+
+    .player-link {
+      margin-top: 6px;
+
+      color: #6d798b;
+
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    /* =========================
+       GENERAL DONATION
+    ========================= */
+
+    .donation-card {
+      margin-top: 22px;
+
+      padding: 28px;
+
+      border-radius: 24px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          #03060b,
+          #0c2548
+        );
+
+      box-shadow:
+        0 15px 38px
+        rgba(0,0,0,.24);
+    }
+
+    .donation-card h2 {
+      margin: 0;
+
+      font-size: 30px;
+
+      letter-spacing: -1px;
+    }
+
+    .donation-card p {
+      max-width: 700px;
+
+      margin: 8px 0 18px;
+
+      color: #c6d7e7;
+
+      line-height: 1.55;
+    }
+
+    .donation-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 12px;
+    }
+
+    .field label {
+      display: block;
+
+      margin-bottom: 7px;
+
+      color: #dceafa;
+
+      font-size: 12px;
+      font-weight: 900;
+
+      text-transform: uppercase;
+    }
+
+    .field input {
+      width: 100%;
+      height: 48px;
+
+      padding: 12px 14px;
+
+      border:
+        1px solid
+        rgba(114,217,255,.28);
+
+      border-radius: 11px;
+
+      outline: none;
+
+      color: white;
+
+      background: #061325;
+    }
+
+    .field input::placeholder {
+      color: #7890aa;
+    }
+
+    .field input:focus {
+      border-color: var(--blue);
+
+      box-shadow:
+        0 0 0 3px
+        rgba(20,125,255,.12);
+    }
+
+    .field input:disabled {
+      opacity: .55;
+    }
+
+    .amount-wrap {
+      position: relative;
+    }
+
+    .amount-symbol {
+      position: absolute;
+
+      left: 14px;
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      color: #9fb7cc;
+
+      font-weight: 900;
+    }
+
+    .amount-wrap input {
+      padding-left: 28px;
+    }
+
+    .anonymous-option {
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+
+      margin: 14px 0;
+
+      padding: 12px 14px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.12);
+
+      border-radius: 11px;
+
+      background:
+        rgba(255,255,255,.05);
+
+      cursor: pointer;
+    }
+
+    .anonymous-option input {
+      width: 20px;
+      height: 20px;
+
+      margin: 0;
+
+      accent-color: var(--blue);
+    }
+
+    .anonymous-option span {
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .donate-button {
+      width: 100%;
+
+      padding: 15px;
+
+      border: 0;
+
+      border-radius: 11px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          90deg,
+          #147dff,
+          #35a5ff
+        );
+
+      font-weight: 900;
+
+      cursor: pointer;
+    }
+
+    .donate-button:disabled {
+      opacity: .55;
+      cursor: not-allowed;
+    }
+
+    .donation-status {
+      min-height: 18px;
+
+      margin-top: 10px;
+
+      text-align: center;
+
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .donation-status.error {
+      color: #ffbcbc;
+    }
+
+    .donation-status.success {
+      color: #b7ffd5;
+    }
+
+    .payment-message {
+      display: none;
+
+      margin-top: 18px;
+
+      padding: 14px 16px;
+
+      border-radius: 13px;
+
+      text-align: center;
+
+      font-weight: 900;
+    }
+
+    .payment-message.success {
+      display: block;
+
+      border:
+        1px solid #72d29d;
+
+      color: #0d6d37;
+
+      background: #eaffeF;
+    }
+
+    .payment-message.cancelled {
+      display: block;
+
+      border:
+        1px solid #ead277;
+
+      color: #775b00;
+
+      background: #fff8d9;
+    }
+
+    footer {
+      padding: 28px 0 0;
+
+      color: #778598;
+
+      text-align: center;
+
+      font-size: 13px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 900px) {
+      .players-grid {
+        grid-template-columns:
+          repeat(
+            2,
+            minmax(0, 1fr)
+          );
+      }
+
+      .hero-inner {
+        grid-template-columns:
+          170px 1fr;
+      }
+
+      .logo-box {
+        min-height: 165px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      body {
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(20,125,255,.15),
+            transparent 23%
+          ),
+          linear-gradient(
+            180deg,
+            #03060b 0,
+            #081425 560px,
+            #f4f7fb 560px
+          );
+      }
+
+      .page {
+        width:
+          calc(100% - 18px);
+
+        padding-top: 10px;
+      }
+
+      .hero {
+        padding: 21px;
+      }
+
+      .hero-inner {
+        grid-template-columns:
+          95px 1fr;
+
+        gap: 15px;
+      }
+
+      .logo-box {
+        min-height: 95px;
+
+        padding: 7px;
+
+        border-radius: 15px;
+      }
+
+      .hero h1 {
+        font-size: 37px;
+      }
+
+      .hero-copy {
+        grid-column: 1 / -1;
+
+        margin-top: 7px;
+
+        font-size: 14px;
+      }
+
+      .hero-badges {
+        grid-column: 1 / -1;
+      }
+
+      .fundraiser-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .players-section {
+        padding: 20px 13px;
+      }
+
+      .players-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .player-card {
+        min-height: 100px;
+      }
+
+      .donation-card {
+        padding: 21px 16px;
+      }
+
+      .donation-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <div class="logo-box">
+        <img
+          src="/logo.png"
+          alt="South Florida Industrials Baseball"
+        />
+      </div>
+
+      <div>
+
+        <div class="eyebrow">
+          South Florida Industrials White 12U
+        </div>
+
+        <h1>
+          Road to
+          <span>Cooperstown</span>
+        </h1>
+
+        <p class="hero-copy">
+          Help the South Florida Industrials White 12U team
+          on their journey to Cooperstown.
+          Choose a player below to sponsor one or more baseballs,
+          or make a general team donation.
+        </p>
+
+        <div class="hero-badges">
+
+          <span class="badge blue">
+            100 Baseballs Per Player
+          </span>
+
+          <span class="badge">
+            $1 – $100 Sponsorships
+          </span>
+
+          <span class="badge">
+            Secure Stripe Checkout
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div
+    id="paymentMessage"
+    class="payment-message"
+  ></div>
+
+
+  <section class="intro-card">
+
+    <div class="intro-kicker">
+      Support the Team
+    </div>
+
+    <h2>
+      Pick a Player. Pick a Baseball.
+    </h2>
+
+    <p>
+      Each player has 100 baseballs numbered
+      1 through 100.
+      The number on the baseball is the donation amount.
+      For example, baseball #25 is a $25 donation.
+      When all 100 baseballs are sponsored,
+      that player raises $5,050.
+    </p>
+
+    <div class="fundraiser-summary">
+
+      <div class="summary-item">
+
+        <div class="summary-value">
+          100
+        </div>
+
+        <div class="summary-label">
+          Baseballs Per Player
+        </div>
+
+      </div>
+
+      <div class="summary-item">
+
+        <div class="summary-value">
+          $5,050
+        </div>
+
+        <div class="summary-label">
+          Player Goal
+        </div>
+
+      </div>
+
+      <div class="summary-item">
+
+        <div class="summary-value">
+          9
+        </div>
+
+        <div class="summary-label">
+          SFI White Players
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="players-section">
+
+    <div class="section-head">
+
+      <div class="small">
+        South Florida Industrials White 12U
+      </div>
+
+      <h2>
+        Choose a Player
+      </h2>
+
+      <p>
+        Select a player to visit their
+        individual Road to Cooperstown fundraiser.
+      </p>
+
+    </div>
+
+
+    <div
+      id="playersGrid"
+      class="players-grid"
+    ></div>
+
+  </section>
+
+
+  <section class="donation-card">
+
+    <h2>
+      General Team Donation
+    </h2>
+
+    <p>
+      Want to support the entire South Florida Industrials White 12U team
+      instead of a specific player?
+      Enter any amount below.
+    </p>
+
+
+    <div class="donation-grid">
+
+      <div class="field">
+
+        <label for="generalAmount">
+          Donation Amount
+        </label>
+
+        <div class="amount-wrap">
+
+          <span class="amount-symbol">
+            $
+          </span>
+
+          <input
+            id="generalAmount"
+            type="number"
+            min="1"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="100.00"
+          />
+
+        </div>
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="generalDonorName">
+          Donor Name
+        </label>
+
+        <input
+          id="generalDonorName"
+          type="text"
+          maxlength="50"
+          autocomplete="name"
+          placeholder="Example: The Smith Family"
+        />
+
+      </div>
+
+    </div>
+
+
+    <label class="anonymous-option">
+
+      <input
+        id="generalAnonymous"
+        type="checkbox"
+      />
+
+      <span>
+        Remain Anonymous
+      </span>
+
+    </label>
+
+
+    <button
+      id="generalDonateButton"
+      class="donate-button"
+      type="button"
+    >
+      Continue to Donation
+    </button>
+
+
+    <div
+      id="generalStatus"
+      class="donation-status"
+    ></div>
+
+  </section>
+
+
+  <footer>
+    South Florida Industrials White 12U
+    • Road to Cooperstown
+  </footer>
+
+</div>
+
+
+<script>
+
+  /* =========================
+     PLAYERS
+  ========================= */
+
+  const PLAYERS = [
+
+    {
+      name: "Dylan Dever",
+      number: 1,
+      slug: "dylan-dever"
+    },
+
+    {
+      name: "Jaiden Aviles",
+      number: 7,
+      slug: "jaiden-aviles"
+    },
+
+    {
+      name: "Ethan Martin",
+      number: 8,
+      slug: "ethan-martin"
+    },
+
+    {
+      name: "Jose Manuel Pinto Zapata",
+      number: 9,
+      slug: "jose-manuel-pinto-zapata"
+    },
+
+    {
+      name: "Lukas Cabezudo",
+      number: 22,
+      slug: "lukas-cabezudo"
+    },
+
+    {
+      name: "Nate Janssen",
+      number: 42,
+      slug: "nate-janssen"
+    },
+
+    {
+      name: "Avery Case",
+      number: 61,
+      slug: "avery-case"
+    },
+
+    {
+      name: "Emanuel Rivera",
+      number: 77,
+      slug: "emanuel-rivera"
+    },
+
+    {
+      name: "Jackson Leverette",
+      number: 88,
+      slug: "jackson-leverette"
+    }
+
+  ];
+
+
+  /* =========================
+     RENDER PLAYERS
+  ========================= */
+
+  const playersGrid =
+    document.getElementById(
+      "playersGrid"
+    );
+
+
+  PLAYERS.forEach(
+    player => {
+
+      const card =
+        document.createElement(
+          "a"
+        );
+
+
+      card.className =
+        "player-card";
+
+
+      card.href =
+        `/fundraiser.html?player=${encodeURIComponent(
+          player.slug
+        )}`;
+
+
+      card.innerHTML = `
+        <div class="player-logo">
+
+          <img
+            src="/logo.png"
+            alt="SFI Baseball"
+          />
+
+        </div>
+
+        <div class="player-info">
+
+          <div class="player-number">
+            Player #${player.number}
+          </div>
+
+          <h3 class="player-name">
+            ${player.name}
+          </h3>
+
+          <div class="player-link">
+            View Fundraiser →
+          </div>
+
+        </div>
+      `;
+
+
+      playersGrid.appendChild(
+        card
+      );
+
+    }
+  );
+
+
+  /* =========================
+     PAYMENT RETURN
+  ========================= */
+
+  const params =
+    new URLSearchParams(
+      window.location.search
+    );
+
+
+  const payment =
+    params.get("payment");
+
+
+  const paymentMessage =
+    document.getElementById(
+      "paymentMessage"
+    );
+
+
+  if (
+    payment === "success"
+  ) {
+
+    paymentMessage.className =
+      "payment-message success";
+
+
+    paymentMessage.textContent =
+      "Thank you! Your team donation was completed successfully.";
+
+  }
+
+
+  if (
+    payment === "cancelled"
+  ) {
+
+    paymentMessage.className =
+      "payment-message cancelled";
+
+
+    paymentMessage.textContent =
+      "Donation checkout was cancelled. No payment was completed.";
+
+  }
+
+
+  /* =========================
+     GENERAL DONATION
+  ========================= */
+
+  const generalAmount =
+    document.getElementById(
+      "generalAmount"
+    );
+
+
+  const generalDonorName =
+    document.getElementById(
+      "generalDonorName"
+    );
+
+
+  const generalAnonymous =
+    document.getElementById(
+      "generalAnonymous"
+    );
+
+
+  const generalDonateButton =
+    document.getElementById(
+      "generalDonateButton"
+    );
+
+
+  const generalStatus =
+    document.getElementById(
+      "generalStatus"
+    );
+
+
+  generalAnonymous.addEventListener(
+    "change",
+    () => {
+
+      if (
+        generalAnonymous.checked
+      ) {
+
+        generalDonorName.value =
+          "";
+
+
+        generalDonorName.disabled =
+          true;
+
+
+        generalDonorName.placeholder =
+          "Anonymous donation";
+
+      } else {
+
+        generalDonorName.disabled =
+          false;
+
+
+        generalDonorName.placeholder =
+          "Example: The Smith Family";
+
+      }
+
+    }
+  );
+
+
+  generalDonateButton.addEventListener(
+    "click",
+    async () => {
+
+      generalStatus.textContent =
+        "";
+
+
+      generalStatus.className =
+        "donation-status";
+
+
+      const amount =
+        Number(
+          generalAmount.value
+        );
+
+
+      if (
+        !Number.isFinite(amount) ||
+        amount < 1
+      ) {
+
+        generalStatus.textContent =
+          "Please enter a donation amount of at least $1.";
+
+
+        generalStatus.className =
+          "donation-status error";
+
+
+        generalAmount.focus();
+
+        return;
+
+      }
+
+
+      let donorName;
+
+
+      if (
+        generalAnonymous.checked
+      ) {
+
+        donorName =
+          "Anonymous";
+
+      } else {
+
+        donorName =
+          generalDonorName
+            .value
+            .trim()
+            .replace(
+              /\s+/g,
+              " "
+            );
+
+
+        if (
+          !donorName
+        ) {
+
+          generalStatus.textContent =
+            "Please enter a donor name or select Remain Anonymous.";
+
+
+          generalStatus.className =
+            "donation-status error";
+
+
+          generalDonorName.focus();
+
+          return;
+
+        }
+
+      }
+
+
+      generalDonateButton.disabled =
+        true;
+
+
+      generalDonateButton.textContent =
+        "Creating Checkout...";
+
+
+      generalStatus.textContent =
+        "Preparing secure checkout...";
+
+
+      generalStatus.className =
+        "donation-status success";
+
+
+      try {
+
+        const response =
+          await fetch(
+            "/api/create-general-donation",
+            {
+              method: "POST",
+
+              headers: {
+                "content-type":
+                  "application/json"
+              },
+
+              body:
+                JSON.stringify({
+
+                  amount,
+
+                  donorName,
+
+                  anonymous:
+                    generalAnonymous.checked
+
+                })
+            }
+          );
+
+
+        const data =
+          await response.json();
+
+
+        if (
+          !response.ok ||
+          !data.url
+        ) {
+
+          throw new Error(
+            data.error ||
+            "Unable to create donation checkout."
+          );
+
+        }
+
+
+        window.location.href =
+          data.url;
+
+      } catch (error) {
+
+        console.error(error);
+
+
+        generalStatus.textContent =
+          error.message ||
+          "Unable to start checkout.";
+
+
+        generalStatus.className =
+          "donation-status error";
+
+
+        generalDonateButton.disabled =
+          false;
+
+
+        generalDonateButton.textContent =
+          "Continue to Donation";
+
+      }
+
+    }
+  );
+
+</script>
+
+</body>
+</html>
